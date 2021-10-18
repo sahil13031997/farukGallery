@@ -9,6 +9,15 @@
     <script src="Build/UnityLoader.js"></script>
     <script src="function.js"></script>
 	<script>
+	
+	 function start() {
+      
+        document.getElementById("myAudio").play();
+		document.getElementById("PopUp").style.display="none"; 
+      }
+	
+	
+	
 		function ToggleFullScreen() {
 			var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
 			(document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
@@ -58,6 +67,9 @@
 		}
 		
 		function UnityProgress(gameInstance, progress) {
+		
+		
+		
 			if (!gameInstance.Module)
 			return;
 			document.getElementById("loadingBlock").style.display = "inherit";	 	
@@ -66,6 +78,7 @@
 			if (progress == 1)
 			{
 				setTimeout(function(){ document.getElementById("loadingBlock").style.display = "none"; }, 000);
+				document.getElementById("PopUp").style.display="flex"; 
 			}	
 		}
 		
@@ -80,6 +93,26 @@
     </script>
   </head>
   <body>
+  
+  <div id="PopUp" class="pop-up-div">
+      <div class="audio-div">
+          <div><img class="mic-img" src="TemplateData/img/mic.png" alt="mic" width="30" height="30"></div>
+          <p>Allow website to play audio on the browser?</p>
+      </div>
+      <div class="btn-div">
+            <button onclick="start()">Cancel</button>
+            <button onclick="start()"><b>Allow</b></button>
+      </div>
+  </div>
+  
+ 
+  
+  
+
+  <audio preload="auto"
+      <source id="myAudio" src="StreamingAssets/markotsFarukAudio/N.mp3" type="audio/mpeg" codecs="mp3">
+      Your browser does not support the audio element.
+    </audio>
   
     <div class="keepRatio">
   

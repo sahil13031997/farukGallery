@@ -1,5 +1,8 @@
 var link;
 
+
+
+
 function iframeCall(a) {
   link = a;
 
@@ -17,4 +20,38 @@ function openInNewWindow() {
 function onCancelClicked()
 {	
 	document.getElementById('viewItemButton').style.display = 'none';
+}
+
+function onCancelClicked()
+{	
+	document.getElementById('viewItemButton').style.display = 'none';
+}
+
+function play(message)
+{
+	//const soundEffect = new Audio();
+	//soundEffect.src = window.location+'/../'+'StreamingAssets'+'/'+'markotsFarukAudio'+'/'+message+'.mp3';
+	//soundEffect.play();
+
+
+	var x = document.getElementById("myAudio"); 
+	x.src=window.location+'/../'+'StreamingAssets'+'/'+'markotsFarukAudio'+'/'+message+'.mp3';
+	x.play();
+}
+
+function pause()
+{
+	console.log("sa");
+	var x = document.getElementById("myAudio"); 
+	
+	x.pause();
+}
+
+function stop()
+{
+	console.log("ssa");
+	var x = document.getElementById("myAudio"); 
+	
+	x.pause();
+	x.currentTime = 0;
 }
