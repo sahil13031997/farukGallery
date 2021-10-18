@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "ArtGalleryDemo",
+"productVersion": "0.1",
+"dataUrl": "markotsFaruk.data.unityweb",
+"wasmCodeUrl": "markotsFaruk.wasm.code.unityweb",
+"wasmFrameworkUrl": "markotsFaruk.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.5f1"
+}

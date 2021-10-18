@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3415390855
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: seanasset
+      Dependencies: {}
+    Info_1:
+      Name: modernag3
+      Dependencies: {}
+    Info_2:
+      Name: modernag2
+      Dependencies: {}
+    Info_3:
+      Name: modernag1
+      Dependencies: {}
+    Info_4:
+      Name: seanasset1
+      Dependencies: {}
+    Info_5:
+      Name: seanasset2
+      Dependencies: {}
